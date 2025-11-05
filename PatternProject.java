@@ -16,13 +16,25 @@ public class PatternProject{
     //
     public static void triangle(int rows){
         int i = 0;
+        int n = 0;
         while(i < rows){
             i++;
-            System.out.print(i);
-            while(){
-              System.out.println(i);  
+          
+            while(n < i){
+                  System.out.print(i);
+                  n++;
+              
             }
+             System.out.println();
+            n = 0; 
         }
+    //
+    public static void odds(int start){
+        int i = start;
+        while(start > 1){
+            
+        }
+    }
 
     }
     public static void main(String[] args){
