@@ -28,17 +28,26 @@ public class PatternProject{
              System.out.println();
             n = 0; 
         }
+    }
     //
     public static void odds(int start){
-        int i = start;
-        while(start > 1){
+        
+        for(int i = start; i>0; i-=2){
+        
+            for(int n = 0; n<i ; n++){
+                System.out.print(i);
+                
+            }
             
+            System.out.println();
         }
     }
 
-    }
+    
     public static void main(String[] args){
         stars(7);
         triangle(9);
+        odds(9);
     }
+    
 }
