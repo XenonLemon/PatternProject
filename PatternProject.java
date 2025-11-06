@@ -42,12 +42,74 @@ public class PatternProject{
             System.out.println();
         }
     }
+    //
+    public static void eo(int maxE){
+        int i = 0;
+        String letter = "E";
+        if(maxE%2 == 0){
+             letter = "O";
+        }
+        while(i < maxE){
+            
+                for(int n = -1; i>n; n++){    
+                    System.out.print(letter);
+                }
+                if(letter.equals("E")){
+                    letter = "O";
+                }
+                else
+                letter ="E";
+                System.out.println();
+                i++;
+            
+            }
+        i = maxE-2;
+
+        while(i >= 0){
+            
+                for(int n = -1; i>n; n++){    
+                    System.out.print(letter);
+                }
+                if(letter.equals("E")){
+                    letter = "O";
+                }
+                else
+                letter ="E";
+                System.out.println();
+                i--;
+            
+            }
+            
+
+    }
+    //
+    public static void pyramid(int rows){
+        int k = 1;
+        for(int i = rows; i>0; i-=1){
+            
+                for(int n = 1; n<=i*2-1 ; n++){
+                    System.out.print(k);
+                    
+                }
+                
+                System.out.println();
+                k++;
+            }
+    }
 
     
     public static void main(String[] args){
         stars(7);
+        System.out.println();
         triangle(9);
+        System.out.println();
         odds(9);
+        System.out.println();
+        eo(6);
+        System.out.println();
+        eo(5);
+        System.out.println();
+        pyramid(5);
     }
     
 }
